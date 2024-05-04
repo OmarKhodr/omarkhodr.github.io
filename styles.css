@@ -4,66 +4,84 @@
   --background-color: #F0EDE7;
   --background-secondary-color: #FDFCF6;
   --background-dark: #56544E;
+  --text-primary: #000;
+  --text-secondary: #9C9C9C;
 }
 
 body {
-  font-family: 'Noto Sans', 'Noto Sans Arabic', sans-serif;
+  font-family: "EB Garamond", serif;
   background-color: var(--background-color);
   color: #000;
   margin: auto;
   overflow-x: hidden;
-  max-width: 800px;
 }
 
 .everything {
+  max-width: 560px;
+  padding: 40px 0px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+  background-image: url('img/paper.png');
+  background-repeat: repeat-y;
+  box-shadow:
+    0px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    0px 12.5px 10px rgba(0, 0, 0, 0.035),
+    0px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0px 100px 80px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+
 }
 
 .logo {
-  object-fit: contain;
-  height: 70px;
-  width: 100%;
-  margin: 16px 0px;
+  /* object-fit: contain; */
+  margin: 0px 32px;
+  display: flex;
+  align-items: baseline;
+
+  .line {
+    flex: 1;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .second {
+    text-align: end;
+    margin-top: -8px;
+  }
 }
 
-.title {
-  display: flex;
-  justify-content: center;
+.after-logo {
+  margin-bottom: 32px;
+}
 
-  .content {
-    text-transform: uppercase;
-    font-weight: 900;
-    padding: 8px 10px;
-    color: #fff;
-    background-color: #000;
+p {
+  margin-inline-start: 32px;
+  margin-inline-end: 32px;
+}
 
-    a {
-      color: #fff;
-    }
-  }
+h2 {
+  margin-inline-start: 32px;
+  margin-inline-end: 32px;
+}
 
-  .google {
-    margin-bottom: 16px;
-  }
+hr {
+  margin-inline-start: 32px;
+  margin-inline-end: 32px;
+}
 
-  .aboutme {
-    width: 220px;
-    margin-bottom: 16px;
-  }
-
-  .shelf {
-    transform: translateY(-18px);
-  }
+figcaption {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 13px;
 }
 
 .bookshelf {
-  width: 100%;
+  width: calc(100% - calc(2 * 32px));
+  margin: 0px 32px;
   object-fit: contain;
-  border: 1px solid var(--background-dark);
-}
-
-.title-google {
-  display: inline-block;
-  margin: 0 auto;
+  border: 1px solid var(--text-secondary);
 }
