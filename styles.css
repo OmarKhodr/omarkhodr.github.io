@@ -1,6 +1,5 @@
 :root {
-  --primary-color: #3A8456;
-  --alternate-color: #1A87AC;
+  --primary-color: #3478F6;
   --background-color: #F0EDE7;
   --background-secondary-color: #FDFCF6;
   --text-primary: #000;
@@ -9,17 +8,29 @@
 }
 
 body {
-  font-family: "EB Garamond", serif;
+  font-family: "EB Garamond", "Noto Naskh Arabic", serif;
   background-color: var(--background-color);
   color: #000;
   margin: auto;
   overflow-x: hidden;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
 .everything {
   max-width: 560px;
-  padding: 40px 0px;
+  padding: 40px 0px 20px;
   margin-top: 40px;
+  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
   background-image: url('img/paper.png');
@@ -32,7 +43,6 @@ body {
     0px 41.8px 33.4px rgba(0, 0, 0, 0.05),
     0px 100px 80px rgba(0, 0, 0, 0.07);
   border-radius: 6px;
-
 }
 
 .logo {
@@ -71,6 +81,9 @@ h2 {
 hr {
   margin-inline-start: 32px;
   margin-inline-end: 32px;
+  border: 0;
+  height: 1px;
+  background-color: var(--text-secondary);
 }
 
 figcaption {
@@ -90,16 +103,64 @@ figcaption {
   margin-inline-start: 32px;
   margin-inline-end: 32px;
   display: inline-block;
-
-
 }
 
 .date {
   position: absolute;
+  text-align: end;
   margin-inline-start: 32px;
-  color: var(--text-secondary)
+  color: var(--text-secondary);
 }
 
 .title {
   margin-inline-start: 120px;
+  font-weight: 500;
+
+  a {
+    color: var(--text-primary);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.post-paper {
+  margin-top: 8px;
+}
+
+.home-button {
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+
+  a {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 4px 6px;
+    border-radius: 6px;
+    background-color: rgba(253, 252, 246, 0.3);
+  }
+
+  a:hover {
+    background-color: rgba(253, 252, 246, 0.8);
+  }
+}
+
+.title-date {
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  text-align: end;
+  color: var(--text-secondary);
+}
+
+h1 {
+  margin-inline-start: 32px;
+  margin-inline-end: 32px;
 }
