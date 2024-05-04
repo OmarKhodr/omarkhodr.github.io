@@ -3,9 +3,9 @@
   --alternate-color: #1A87AC;
   --background-color: #F0EDE7;
   --background-secondary-color: #FDFCF6;
-  --background-dark: #56544E;
   --text-primary: #000;
-  --text-secondary: #9C9C9C;
+  --text-secondary: #8A8A8E;
+  --text-tertiary: #C0C0C2;
 }
 
 body {
@@ -84,4 +84,22 @@ figcaption {
   margin: 0px 32px;
   object-fit: contain;
   border: 1px solid var(--text-secondary);
+}
+
+.post {
+  margin-inline-start: 32px;
+  margin-inline-end: 32px;
+  display: inline-block;
+
+
+}
+
+.date {
+  position: absolute;
+  margin-inline-start: 32px;
+  color: var(--text-secondary)
+}
+
+.title {
+  margin-inline-start: 120px;
 }
