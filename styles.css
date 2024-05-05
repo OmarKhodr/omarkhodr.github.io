@@ -115,6 +115,7 @@ figcaption {
 
 .title {
   margin-inline-start: 120px;
+  margin-inline-end: 32px;
   font-weight: 500;
 
   a {
@@ -144,7 +145,6 @@ figcaption {
     text-decoration: none;
     padding: 4px 6px;
     border-radius: 6px;
-    background-color: rgba(253, 252, 246, 0.3);
   }
 
   a:hover {
@@ -159,6 +159,10 @@ figcaption {
   margin-top: 8px;
   text-align: end;
   color: var(--text-secondary);
+}
+
+.title {
+  margin-bottom: 8px;
 }
 
 h1 {
