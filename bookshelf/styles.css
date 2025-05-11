@@ -99,10 +99,13 @@ body {
   user-select: none;
 }
 
-.spine:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 6px rgb(0 0 0 /.35);
-  transition: all .15s ease;
+/* Only run the fancy hover effect on devices that *have* hover */
+@media (hover: hover) and (pointer: fine) {
+  .spine:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgb(0 0 0 /.35);
+    transition: all .15s ease;
+  }
 }
 
 /* Book Detail */
