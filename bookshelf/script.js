@@ -5,6 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   let booksData = null;
+  let selectedBook = null;
 
   /* ------------------------------------------------------------------
      1 ▸ build the sidebar once and add to <body>
@@ -13,17 +14,19 @@ document.addEventListener('DOMContentLoaded', () => {
   detail.id = 'book-detail';
   detail.className = 'book-detail';
   detail.innerHTML = /* html */`
-    <button class="detail-close" aria-label="Close book detail">&times;</button>
     <div class="detail-content" tabindex="0"></div>`;
   document.body.appendChild(detail);
-
-  const closeBtn = detail.querySelector('.detail-close');
-  closeBtn.addEventListener('click', () => history.back());
 
   /* ------------------------------------------------------------------
      2 ▸ set up history handling for mobile overlay only
   ------------------------------------------------------------------ */
-  window.addEventListener('popstate', () => {
+  window.addEventListener('popstate', (event) => {
+    if (event.state?.bookSlug) {
+      const book = booksData?.find(b => b.slug === event.state.bookSlug) ?? null;
+      showDetail(book);
+    } else if (window.innerWidth >= 600) {
+      history.back();  // if no previous state, go back in history
+    }
     if (window.innerWidth < 600 && detail.classList.contains('open')) {
       hideDetail();
     }
@@ -53,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
      5 ▸ helper functions
   ------------------------------------------------------------------ */
   function showDetail(book) {
+    selectedBook = book;
     const html = book
       ? `<h2 class="title">${book.title}</h2>
          <p class="author">${book.author}</p>
@@ -61,16 +65,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     detail.querySelector('.detail-content').innerHTML = html;
 
+    const slug = book?.slug ?? 'detail';
+    history.pushState({ bookSlug: slug }, '', '#' + slug);
     if (window.innerWidth < 600) {
       // For mobile, push a history entry so Back closes the overlay first
-      if (!history.state || !history.state.bookDetail) {
-        history.pushState({ bookDetail: true }, '', '#' + (book?.slug ?? 'detail'));
-      }
       detail.classList.add('open');
     }
   }
 
   function hideDetail() {
+    selectedBook = null;
     detail.classList.remove('open');
     detail.querySelector('.detail-content').innerHTML = '';
   }
@@ -84,9 +88,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function syncLayout() {
     if (window.innerWidth >= 600) {
       detail.classList.add('open');      // keep sidebar visible
-      closeBtn.style.display = 'none';   // hide × button
     } else {
-      closeBtn.style.display = '';
+      if (selectedBook === null) {
+        detail.classList.remove('open');  // hide sidebar
+      }
     }
   }
 });
