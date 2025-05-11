@@ -1,81 +1,92 @@
-// Adds a responsive sidebar / overlay that shows book details when a spine is clicked.
-// – On desktop/tablet (> 600 px) it behaves as a right–hand sidebar.
-// – On small screens it takes the whole viewport and can be left via the browser’s Back
-//   button or the × icon.
+// script.js – persistent sidebar on ≥ 600 px, overlay on narrow screens
+// • ≥ 600 px: 420 px‑wide sidebar is always visible; no close button, no history.
+// • < 600 px: sidebar covers the full viewport, dismissable via Back or ×.
+// • Clicking a spine only updates the content; image of the spine is *not* shown.
 
 document.addEventListener('DOMContentLoaded', () => {
   let booksData = null;
 
-  /* ---------------------------------------------------------------------
-     1 ▸ prepare the overlay element once, append it to <body>
-  --------------------------------------------------------------------- */
-  const overlay = document.createElement('aside');
-  overlay.id = 'book-detail';
-  overlay.className = 'book-detail';     // styles live in styles.css
-  overlay.innerHTML = /* html */`
+  /* ------------------------------------------------------------------
+     1 ▸ build the sidebar once and add to <body>
+  ------------------------------------------------------------------ */
+  const detail = document.createElement('aside');
+  detail.id = 'book-detail';
+  detail.className = 'book-detail';
+  detail.innerHTML = /* html */`
     <button class="detail-close" aria-label="Close book detail">&times;</button>
     <div class="detail-content" tabindex="0"></div>`;
-  document.body.appendChild(overlay);
+  document.body.appendChild(detail);
 
-  const closeBtn = overlay.querySelector('.detail-close');
+  const closeBtn = detail.querySelector('.detail-close');
   closeBtn.addEventListener('click', () => history.back());
 
-  /* Browser Back button – close overlay instead of leaving the page */
+  /* ------------------------------------------------------------------
+     2 ▸ set up history handling for mobile overlay only
+  ------------------------------------------------------------------ */
   window.addEventListener('popstate', () => {
-    if (overlay.classList.contains('open')) {
-      hideOverlay();
+    if (window.innerWidth < 600 && detail.classList.contains('open')) {
+      hideDetail();
     }
   });
 
-  /* ---------------------------------------------------------------------
-     2 ▸ fetch the metadata once so we have title/author/year ready
-  --------------------------------------------------------------------- */
+  /* ------------------------------------------------------------------
+     3 ▸ fetch book metadata once
+  ------------------------------------------------------------------ */
   fetch('./books.json')
     .then(r => r.ok ? r.json() : Promise.reject(r))
-    .then(json => { booksData = json; })
+    .then(json => (booksData = json))
     .catch(err => console.error('Could not load books.json:', err));
 
-  /* ---------------------------------------------------------------------
-     3 ▸ make every spine interactive
-  --------------------------------------------------------------------- */
+  /* ------------------------------------------------------------------
+     4 ▸ make each spine interactive
+  ------------------------------------------------------------------ */
   document.querySelectorAll('.spine').forEach(img => {
     img.style.cursor = 'pointer';
     img.addEventListener('click', () => {
-      const slug = img.src.split('/').pop().split('.').shift();   // e.g. postman_teaching
+      const slug = img.src.split('/').pop().replace(/\.[a-z]+$/, '');
       const book = booksData?.find(b => b.slug === slug) ?? null;
-      showOverlay(book, img.src.replace('.jpeg', '_cover.jpeg'));
+      showDetail(book);
     });
   });
 
-  /* ---------------------------------------------------------------------
-     4 ▸ helper functions
-  --------------------------------------------------------------------- */
-  function showOverlay(book, imgSrc) {
+  /* ------------------------------------------------------------------
+     5 ▸ helper functions
+  ------------------------------------------------------------------ */
+  function showDetail(book) {
     const html = book
-      ? `
-        <h2>${book.title}</h2>
-        <p class="author">${book.author}</p>
-        <p class="year">${book.year_published}</p>
-        <img src="${imgSrc}" alt="Cover of ${book.title}" class="cover">
-      `
+      ? `<h2>${book.title}</h2>
+         <p class="author">${book.author}</p>
+         <p class="year">${book.year_published}</p>`
       : '<p>Details not available.</p>';
 
-    overlay.querySelector('.detail-content').innerHTML = html;
+    detail.querySelector('.detail-content').innerHTML = html;
 
-    /* push at most one extra history entry to trap the Back button
-       (don’t pile them up if user keeps switching between books) */
-    if (!history.state || !history.state.bookDetail) {
-      history.pushState({ bookDetail: true }, '', '#' + (book?.slug ?? 'detail'));
+    if (window.innerWidth < 600) {
+      // For mobile, push a history entry so Back closes the overlay first
+      if (!history.state || !history.state.bookDetail) {
+        history.pushState({ bookDetail: true }, '', '#' + (book?.slug ?? 'detail'));
+      }
+      detail.classList.add('open');
     }
-
-    requestAnimationFrame(() => overlay.classList.add('open'));
   }
 
-  function hideOverlay() {
-    overlay.classList.remove('open');
-    /* housekeeping: clear contents after the closing animation */
-    overlay.addEventListener('transitionend', () => {
-      overlay.querySelector('.detail-content').innerHTML = '';
-    }, { once: true });
+  function hideDetail() {
+    detail.classList.remove('open');
+    detail.querySelector('.detail-content').innerHTML = '';
+  }
+
+  /* ------------------------------------------------------------------
+     6 ▸ respond to viewport changes
+  ------------------------------------------------------------------ */
+  window.addEventListener('resize', syncLayout);
+  syncLayout();  // run once on load
+
+  function syncLayout() {
+    if (window.innerWidth >= 600) {
+      detail.classList.add('open');      // keep sidebar visible
+      closeBtn.style.display = 'none';   // hide × button
+    } else {
+      closeBtn.style.display = '';
+    }
   }
 });

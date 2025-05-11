@@ -1,26 +1,9 @@
-/*
-Noto Sans Display font classes.
-<uniquifier>: Use a unique and descriptive class name
-<weight>: Use a value from 100 to 900
-*/
+/* <weight>: Use a value from 400 to 900 */
+/* <uniquifier>: Use a unique and descriptive class name */
 
-.noto-sans-display-black {
-  font-family: "Noto Sans Display", sans-serif;
+.playfair-display-500 {
+  font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: 500;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
-
-.noto-sans-medium {
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }

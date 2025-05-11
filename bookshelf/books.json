@@ -96,5 +96,19 @@
     "author": "Hector Garcia and Francesc Miralles",
     "year_published": 2016,
     "spine_h_mm": 200
+  },
+  {
+    "slug": "aurelius_meditations",
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "year_published": 180,
+    "spine_h_mm": 175
+  },
+  {
+    "slug": "seneca_letters",
+    "title": "Letters from a Stoic",
+    "author": "Seneca",
+    "year_published": 65,
+    "spine_h_mm": 195
   }
 ]
