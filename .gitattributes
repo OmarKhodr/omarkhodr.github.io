@@ -1,0 +1,1 @@
+bookshelf/static/*.{png,jpg,jpeg,avif,webp} filter=lfs diff=lfs merge=lfs -text
