@@ -54,10 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
   ------------------------------------------------------------------ */
   function showDetail(book) {
     const html = book
-      ? `<h2>${book.title}</h2>
+      ? `<h2 class="title">${book.title}</h2>
          <p class="author">${book.author}</p>
          <p class="year">${book.year_published}</p>`
-      : '<p>Details not available.</p>';
+      : '<h2>Details not available.</h2>';
 
     detail.querySelector('.detail-content').innerHTML = html;
 

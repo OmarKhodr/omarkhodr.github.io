@@ -95,7 +95,28 @@
     "title": "Ikigai: The Japanese Secret to a Long and Happy Life",
     "author": "Hector Garcia and Francesc Miralles",
     "year_published": 2016,
-    "spine_h_mm": 200
+    "spine_h_mm": 205
+  },
+  {
+    "slug": "kushner_doom",
+    "title": "Masters of Doom: How the 1990s Video Game Revolution Changed the World",
+    "author": "David Kushner",
+    "year_published": 2003,
+    "spine_h_mm": 203
+  },
+  {
+    "slug": "iwata",
+    "title": "Ask Iwata: Words of Wisdom from Satoru Iwata, Nintendo's Legendary CEO",
+    "author": "Satoru Iwata",
+    "year_published": 2019,
+    "spine_h_mm": 215
+  },
+  {
+    "slug": "minshall_manufactured",
+    "title": "Your Life is Manufactured",
+    "author": "Tim Minshall",
+    "year_published": 2025,
+    "spine_h_mm": 235
   },
   {
     "slug": "aurelius_meditations",

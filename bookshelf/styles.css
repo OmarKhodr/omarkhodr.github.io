@@ -89,17 +89,6 @@ body {
   /* shown via .open on mobile */
   flex-direction: column;
   padding: 1.25rem;
-
-  h2 {
-    font-size: 2rem;
-    font-family: "Playfair Display", serif;
-    font-weight: 500;
-  }
-
-  p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-  }
 }
 
 .book-detail.open {
@@ -114,5 +103,25 @@ body {
     /* persistent */
     width: 420px;
     border-left: 1px solid #333;
+  }
+}
+
+.detail-content {
+  .title {
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  .author,
+  .year {
+    margin-top: 4px;
+    margin-bottom: 6px;
+  }
+
+  p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
   }
 }
