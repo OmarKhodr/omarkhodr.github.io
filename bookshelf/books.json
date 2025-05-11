@@ -119,11 +119,46 @@
     "spine_h_mm": 235
   },
   {
-    "slug": "aurelius_meditations",
-    "title": "Meditations",
-    "author": "Marcus Aurelius",
-    "year_published": 180,
-    "spine_h_mm": 175
+    "slug": "mortimer_how",
+    "title": "How to Read a Book",
+    "author": "Mortimer J. Adler and Charles Van Doren",
+    "year_published": 1972,
+    "spine_h_mm": 210
+  },
+  {
+    "slug": "kahneman_think",
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "year_published": 2011,
+    "spine_h_mm": 205
+  },
+  {
+    "slug": "toynbee_history",
+    "title": "A Study of History",
+    "author": "Arnold J. Toynbee",
+    "year_published": 1934,
+    "spine_h_mm": 215
+  },
+  {
+    "slug": "fadlan_darkness",
+    "title": "Ibn Fadlan and the Land of Darkness: Arab Travellers in the Far North",
+    "author": "Ibn Fadlan",
+    "year_published": 921,
+    "spine_h_mm": 205
+  },
+  {
+    "slug": "olivier_echec",
+    "title": "L'Echec de l'Islam Politique",
+    "author": "Olivier Roy",
+    "year_published": 1992,
+    "spine_h_mm": 178
+  },
+  {
+    "slug": "bronowski_ascent",
+    "title": "The Ascent of Man",
+    "author": "Jacob Bronowski",
+    "year_published": 1973,
+    "spine_h_mm": 210
   },
   {
     "slug": "seneca_letters",
