@@ -43,6 +43,42 @@ body {
   }
 }
 
+@media (max-width: 599px) {
+  .bookshelf {
+    /* keep every spine on the same row */
+    flex-wrap: nowrap;
+    /* horizontal scroll instead of line-breaks */
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* prevents accidental vertical scroll */
+    -webkit-overflow-scrolling: touch;
+    /* smooth momentum scrolling on iOS */
+    gap: 0.5rem;
+    /* same gap you already use */
+    scroll-snap-type: x proximity;
+    /* optional—makes scrolling “stick” */
+  }
+
+  /* keep each spine from shrinking and let it snap nicely */
+  .spine {
+    flex: 0 0 auto;
+    /* don’t shrink, don’t grow */
+    scroll-snap-align: end;
+    /* or `start`—pick what feels best */
+  }
+
+  /* cosmetic: thin scrollbar that doesn’t dominate the UI */
+  .bookshelf::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .bookshelf::-webkit-scrollbar-thumb {
+    background: #444;
+    /* subtle thumb */
+    border-radius: 2px;
+  }
+}
+
 .spine {
   display: block;
   /* We store h-mm as a style attribute on the spine img */
