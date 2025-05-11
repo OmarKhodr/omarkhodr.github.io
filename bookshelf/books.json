@@ -322,6 +322,13 @@
     "spine_h_mm": 178
   },
   {
+    "slug": "aurelius_meditations",
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "year_published": 180,
+    "spine_h_mm": 175
+  },
+  {
     "slug": "seneca_letters",
     "title": "Letters from a Stoic",
     "author": "Seneca",
