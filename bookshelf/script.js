@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let booksData = null;
   let selectedBook = null;
 
+  window.location.hash = '';  // remove any hash from the URL on first load
+
   /* ------------------------------------------------------------------
      1 ▸ build the sidebar once and add to <body>
   ------------------------------------------------------------------ */
