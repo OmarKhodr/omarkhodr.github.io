@@ -161,6 +161,167 @@
     "spine_h_mm": 210
   },
   {
+    "slug": "salibi_mansions",
+    "title": "A House of Many Mansions: The History of Lebanon Reconsidered",
+    "author": "Kamal Salibi",
+    "year_published": 1988,
+    "spine_h_mm": 215
+  },
+  {
+    "slug": "fisk_pity",
+    "title": "Pity The Nation: Lebanon at War",
+    "author": "Robert Fisk",
+    "year_published": 1990,
+    "spine_h_mm": 198
+  },
+  {
+    "slug": "salam_liban",
+    "title": "Le Liban D'Hier à Demain",
+    "author": "Nawaf Salam",
+    "year_published": 2021,
+    "spine_h_mm": 190
+  },
+  {
+    "slug": "vonnegut_pianiste",
+    "title": "Le Pianiste déchaîné",
+    "author": "Kurt Vonnegut",
+    "year_published": 1952,
+    "spine_h_mm": 177
+  },
+  {
+    "slug": "vonnegut_slaughter",
+    "title": "Slaughterhouse-Five",
+    "author": "Kurt Vonnegut",
+    "year_published": 1969,
+    "spine_h_mm": 175
+  },
+  {
+    "slug": "orwell_1984",
+    "title": "1984",
+    "author": "George Orwell",
+    "year_published": 1949,
+    "spine_h_mm": 198
+  },
+  {
+    "slug": "huxley_brave",
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "year_published": 1932,
+    "spine_h_mm": 180
+  },
+  {
+    "slug": "sakura_convenience",
+    "title": "Convinience Store Woman",
+    "author": "Sayaka Murata",
+    "year_published": 2016,
+    "spine_h_mm": 200
+  },
+  {
+    "slug": "gibran_prophet",
+    "title": "The Prophet",
+    "author": "Khalil Gibran",
+    "year_published": 1923,
+    "spine_h_mm": 204
+  },
+  {
+    "slug": "maalouf_tanios",
+    "title": "Le Rocher de Tanios",
+    "author": "Amin Maalouf",
+    "year_published": 1953,
+    "spine_h_mm": 180
+  },
+  {
+    "slug": "ghazali_revival1",
+    "title": "The Book Of Knowledge",
+    "author": "Al-Ghazali",
+    "year_published": 1106,
+    "spine_h_mm": 230
+  },
+  {
+    "slug": "ghazali_revival22",
+    "title": "Discplining the Soul & Breaking the Two Desires",
+    "author": "Al-Ghazali",
+    "year_published": 1106,
+    "spine_h_mm": 234
+  },
+  {
+    "slug": "ghazali_revival32",
+    "title": "Patience & Thankfulness",
+    "author": "Al-Ghazali",
+    "year_published": 1106,
+    "spine_h_mm": 234
+  },
+  {
+    "slug": "ghazali_revival40",
+    "title": "Rememberance of Death & the Afterlife",
+    "author": "Al-Ghazali",
+    "year_published": 1106,
+    "spine_h_mm": 235
+  },
+  {
+    "slug": "ghazali_disciple",
+    "title": "Letter to a Disciple",
+    "author": "Al-Ghazali",
+    "year_published": 1106,
+    "spine_h_mm": 235
+  },
+  {
+    "slug": "jawziyya_wisdom",
+    "title": "On Divine Wisdom and the Problem of Evil",
+    "author": "Ibn Qayyim Al-Jawziyya",
+    "year_published": 1350,
+    "spine_h_mm": 235
+  },
+  {
+    "slug": "jawziyya_knowledge",
+    "title": "On Knowledge",
+    "author": "Ibn Qayyim Al-Jawziyya",
+    "year_published": 1350,
+    "spine_h_mm": 235
+  },
+  {
+    "slug": "brown_slavery",
+    "title": "Islam & Slavery",
+    "author": "Jonathan A.C. Brown",
+    "year_published": 2019,
+    "spine_h_mm": 225
+  },
+  {
+    "slug": "ghazali_revival35_ar",
+    "title": "كتاب المحبة والشوق والأنس والرضا",
+    "author": "Al-Ghazali",
+    "year_published": 1106,
+    "spine_h_mm": 215
+  },
+  {
+    "slug": "ghazali_revival14_ar",
+    "title": "كتاب الحلال والحرام",
+    "author": "Al-Ghazali",
+    "year_published": 1106,
+    "spine_h_mm": 215
+  },
+  {
+    "slug": "ghazali_revival22_ar",
+    "title": "كتاب رياضة النفس",
+    "author": "Al-Ghazali",
+    "year_published": 1106,
+    "spine_h_mm": 215
+  },
+  {
+    "slug": "uthaymayn_riad",
+    "title": "شرح رياض الصالحين",
+    "author": "Ibn Uthaymin",
+    "year_published": 2018,
+    "spine_h_mm": 245
+  },
+  {
+    "slug": "asad_crossroads",
+    "title": "Islam at the Crossroads",
+    "author": "Muhammad Asad",
+    "year_published": 1981,
+    "spine_h_mm": 178
+  },
+  {
     "slug": "seneca_letters",
     "title": "Letters from a Stoic",
     "author": "Seneca",
