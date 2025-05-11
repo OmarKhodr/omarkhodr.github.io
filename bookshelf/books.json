@@ -1,0 +1,100 @@
+[
+  {
+    "slug": "clrs",
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein",
+    "year_published": 2009,
+    "spine_h_mm": 231
+  },
+  {
+    "slug": "cproglang",
+    "title": "The C Programming Language. 2nd Edition",
+    "author": "Brian W. Kernighan and Dennis M. Ritchie",
+    "year_published": 1988,
+    "spine_h_mm": 230
+  },
+  {
+    "slug": "brooks_manmonth",
+    "title": "The Mythical Man-Month",
+    "author": "Fred Brooks",
+    "year_published": 1975,
+    "spine_h_mm": 230
+  },
+  {
+    "slug": "postman_teaching",
+    "title": "Teaching as a Subversive Activity",
+    "author": "Neil Postman",
+    "year_published": 1969,
+    "spine_h_mm": 215
+  },
+  {
+    "slug": "postman_disappearance",
+    "title": "The Disappearance of Childhood",
+    "author": "Neil Postman",
+    "year_published": 1982,
+    "spine_h_mm": 205
+  },
+  {
+    "slug": "postman_amusing",
+    "title": "Amusing Ourselves to Death",
+    "author": "Neil Postman",
+    "year_published": 1985,
+    "spine_h_mm": 200
+  },
+  {
+    "slug": "postman_conscientious",
+    "title": "Conscientious Objections",
+    "author": "Neil Postman",
+    "year_published": 1988,
+    "spine_h_mm": 205
+  },
+  {
+    "slug": "postman_technopoly",
+    "title": "Technopoly",
+    "author": "Neil Postman",
+    "year_published": 1992,
+    "spine_h_mm": 205
+  },
+  {
+    "slug": "postman_end_education",
+    "title": "The End of Education",
+    "author": "Neil Postman",
+    "year_published": 1995,
+    "spine_h_mm": 205
+  },
+  {
+    "slug": "postman_tv_news",
+    "title": "How to Watch TV News",
+    "author": "Neil Postman and Steve Powers",
+    "year_published": 1992,
+    "spine_h_mm": 193
+  },
+  {
+    "slug": "taleb_blackswan",
+    "title": "The Black Swan",
+    "author": "Nassim Nicholas Taleb",
+    "year_published": 2007,
+    "spine_h_mm": 195
+  },
+  {
+    "slug": "hedges_empire",
+    "title": "Empire of Illusion: The End of Literacy and the Triumph of Spectacle",
+    "author": "Chris Hedges",
+    "year_published": 2009,
+    "spine_h_mm": 210
+  },
+  {
+    "slug": "scott_veil",
+    "title": "The Politics of the Veil",
+    "author": "Joan Wallach Scott",
+    "year_published": 2007,
+    "spine_h_mm": 215
+  },
+  {
+    "slug": "hector_ikigai",
+    "title": "Ikigai: The Japanese Secret to a Long and Happy Life",
+    "author": "Hector Garcia and Francesc Miralles",
+    "year_published": 2016,
+    "spine_h_mm": 200
+  }
+]
