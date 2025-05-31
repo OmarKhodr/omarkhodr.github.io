@@ -21,6 +21,13 @@
     "spine_h_mm": 230
   },
   {
+    "slug": "hackers",
+    "title": "Hackers: Heroes of the Computer Revolution",
+    "author": "Steven Levy",
+    "year_published": 1984,
+    "spine_h_mm": 213
+  },
+  {
     "slug": "postman_teaching",
     "title": "Teaching as a Subversive Activity",
     "author": "Neil Postman and Charles Weingartner",
@@ -238,6 +245,13 @@
     "spine_h_mm": 230
   },
   {
+    "slug": "ghazali_revival14",
+    "title": "The Lawful & the Unlawful",
+    "author": "Al-Ghazali",
+    "year_published": 1106,
+    "spine_h_mm": 232
+  },
+  {
     "slug": "ghazali_revival22",
     "title": "Discplining the Soul & Breaking the Two Desires",
     "author": "Al-Ghazali",
@@ -250,6 +264,20 @@
     "author": "Al-Ghazali",
     "year_published": 1106,
     "spine_h_mm": 234
+  },
+  {
+    "slug": "ghazali_revival36",
+    "title": "Love, Longing, Intimacy & Contentment",
+    "author": "Al-Ghazali",
+    "year_published": 1106,
+    "spine_h_mm": 232
+  },
+  {
+    "slug": "ghazali_revival38",
+    "title": "Vigilance & Self-Examination",
+    "author": "Al-Ghazali",
+    "year_published": 1106,
+    "spine_h_mm": 232
   },
   {
     "slug": "ghazali_revival40",
@@ -280,14 +308,7 @@
     "spine_h_mm": 235
   },
   {
-    "slug": "brown_slavery",
-    "title": "Slavery & Islam",
-    "author": "Jonathan A.C. Brown",
-    "year_published": 2019,
-    "spine_h_mm": 225
-  },
-  {
-    "slug": "ghazali_revival35_ar",
+    "slug": "ghazali_revival36_ar",
     "title": "كتاب المحبة والشوق والأنس والرضا",
     "author": "Al-Ghazali",
     "year_published": 1106,
@@ -313,6 +334,27 @@
     "author": "Ibn Uthaymin",
     "year_published": 2018,
     "spine_h_mm": 245
+  },
+  {
+    "slug": "islamic_calligraphy",
+    "title": "The Splendor of Islamic Calligraphy",
+    "author": "Mohammed Sijelmassi, Abdelkebir Khatibi",
+    "year_published": 1996,
+    "spine_h_mm": 250
+  },
+  {
+    "slug": "brown_slavery",
+    "title": "Slavery & Islam",
+    "author": "Jonathan A.C. Brown",
+    "year_published": 2019,
+    "spine_h_mm": 225
+  },
+  {
+    "slug": "badawi_universe",
+    "title": "Man and the Universe: An Islamic Perspective",
+    "author": "Mostafa Al-Badawi",
+    "year_published": 1999,
+    "spine_h_mm": 215
   },
   {
     "slug": "asad_crossroads",
