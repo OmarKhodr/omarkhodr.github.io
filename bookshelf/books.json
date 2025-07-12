@@ -14,6 +14,20 @@
     "spine_h_mm": 230
   },
   {
+    "slug": "kleppman_ddia",
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "year_published": 2017,
+    "spine_h_mm": 234
+  },
+  {
+    "slug": "hajj_pmpp",
+    "title": "Programming Massively Parallel Processors: A Hands-on Approach",
+    "author": "David B. Kirk, Wen-mei W. Hwu and Izzat El Hajj",
+    "year_published": 2022,
+    "spine_h_mm": 234
+  },
+  {
     "slug": "brooks_manmonth",
     "title": "The Mythical Man-Month",
     "author": "Fred Brooks",
@@ -348,6 +362,13 @@
     "author": "Jonathan A.C. Brown",
     "year_published": 2019,
     "spine_h_mm": 225
+  },
+  {
+    "slug": "gai_destiny",
+    "title": "Islam and the Destiny of Man",
+    "author": "Gai Eaton",
+    "year_published": 1997,
+    "spine_h_mm": 234
   },
   {
     "slug": "badawi_universe",
